@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algoritimo 2</title>
+    <script>
+        const produtos = [
+            'primeiro produto',
+            'Segundo produto',
+            'Terceiro produto',
+            'Quarto produto',
+            'Quinto produto'
+        ]
+
+    for(let i = 1; i <= produtos.length; i++){
+        alert(`Número da sessão : ${i}`)
+        let prec = parseFloat(prompt('Preço do produto'))
+        console.log(`O preço do produto foi de ${prec}`);
+        let quantidade = parseFloat(prompt('Quantidade de produtos'))
+        console.log(`A quantidade total foi de ${quantidade}`);
+        var vg = prec * quantidade
+        console.log(`A quantidade gasta na sessâo n°${i} Foi de ${vg}`);
+        alert(`A quantidade gasta na sessao n°${i} foi de ${vg}`)
+    }
+
+    if(vg >= 100){
+        alert(`A quantidade gasta na sessao n°${i} foi maior que 100`)
+        console.log(`A quantidade gasta na sessao n°${i} foi maior que 100`)
+    }
+
+    else
+    console.log('Não exise !-!-!')
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

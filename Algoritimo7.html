@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algoritimo 7</title>
+    <script>
+        var procedencia, idade, percentual
+        let capital = 0;
+        let maior = 0;
+        let total = 0;
+        for(let i = 1; i <= 3; i++){ //Conciderando que tivemos 300 pessoas passando pela rodoviária no dia 
+            total++
+        procedencia = parseInt(prompt('Informe sua procedência! \nDigite "0" se você veio da capital.\nDigite "1" se você veio do interior.\nDigite "2" se você veio de outro estado.'))
+        if(procedencia == "0"){
+            capital++
+            console.log(procedencia);
+        }
+        idade = parseInt(prompt('Informe sua idade'))
+        if(idade >= 18){
+            maior++
+            alert('Individuo maior de idade')
+            console.log(idade);
+        }
+  }
+      percentual = total / maior * 100
+    console.log(`${capital} pessoa(s) veio/vieram da capital`);
+    alert(`${capital} pessoa(s) veio/vieram da capital!`)
+    console.log(`${percentual}%`);
+    alert(`tivemos um total de ${percentual}% de pessoas maiores de idade chegando na rodoviária`)
+   
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

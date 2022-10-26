@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algoritimo 3</title>
+    <script>
+        const sessao = [
+            "Sessao numero 1",
+            "Sessao numero 2",
+            "Sessao numero 3",
+            "Sessao numero 4",
+            "Sessao numero 5",
+            "Sessao numero 6",
+            "Sessao numero 7",
+            "Sessao numero 8",
+            "Sessao numero 9",
+            "Sessao numero 10",
+        ]
+        let negativos = 0;
+
+        for(let i = 1; i <= 10; i++){
+            alert(`Numero da sessao ${i}`)
+            console.log(`Numero da sessao ${i}`)
+            var numero = parseInt(prompt('Digite um numero inteiro'))
+            console.log(`O Núemro registrado foi ${numero}`);
+            if(numero > 0){
+                dobro = numero * 2
+                console.log('Dobro = ', dobro);
+                alert(`Na sessao n°${i} o numero declarado é positivo (${numero}) \nE seu respectivo dobro doi de ${dobro}`)
+            }
+            else{
+                negativos++;
+                console.log(numero)
+            }
+        }
+        alert(`O numero de negativos foi de : ${negativos}`)
+        console.log(negativos)
+
+       
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

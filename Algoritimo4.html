@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algoritimo 4</title>
+    <script>
+        let Calcado = 0;
+        
+        for(let i = 1; i <= 150; i++){
+            let pc = parseFloat(prompt('Digite o preço de custo da sua peça : ')) //PC = preço de custo
+            console.log(`O preço de custo registrado foi ${pc}`);
+            let pv = parseFloat(prompt('Informe o preço de venda da mesma peça : ')) //PV = preço de venda
+            console.log(`O preço de venda registrado foi ${pv}`);
+            var VC = String(prompt('Digite se sua peça faz parte de vestuário ou calçado. \nSe for um vestuário digite "V" e se for um calçado digite "C"'))
+            console.log(`A peça registrada foi ${VC}`);
+            if(VC === 'c' || VC === 'C'){
+            Calcado++
+            }
+            let Lucro = pv - pc
+            alert(`Lucro total da peça de roupa que faz parte ao conjunto "${VC}" foi de aproximadamente ${Lucro}$$`)
+            console.log(`Lucro total de ${Lucro}`);
+        } 
+        console.log(Calcado);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
